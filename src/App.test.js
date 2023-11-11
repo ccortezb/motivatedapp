@@ -1,6 +1,7 @@
 // src/App.test.js
 
 import { render, screen, fireEvent } from '@testing-library/react';
+import '@testing-library/jest-dom'; // Import the library extension
 import App from './App';
 
 test('renders MotivatedApp header', () => {

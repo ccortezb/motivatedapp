@@ -7,17 +7,6 @@ const App = () => {
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
 
-  const startMyDay = () => {
-    if (!name || !age || isNaN(age)) {
-      setError('Please enter a valid name and age.');
-      setMessage('');
-    } else {
-      setError('');
-      const randomMessage = getRandomMessage(age);
-      setMessage(randomMessage);
-    }
-  };
-
   const getRandomMessage = (age) => {
     const messages = {
       below20: ['Youth is a gift of nature.', 'Stay curious!', 'The world is yours to explore.'],
@@ -31,11 +20,15 @@ const App = () => {
   };
 
   const startMyDay = () => {
+    if (!name || !age || isNaN(age)) {
+      setError('Please enter a valid name and age.');
+      setMessage('');
+    } else {
     const greeting = ['Good morning', 'Good afternoon', 'Good evening'];
     const randomGreeting = greeting[Math.floor(Math.random() * greeting.length)];
     const randomMotivatedMessage = getRandomMessage(age);
-
     setMessage(`${randomGreeting}, ${name}! ${randomMotivatedMessage}`);
+    }
   };
 
   return (
