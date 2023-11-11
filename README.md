@@ -1,5 +1,8 @@
 # MotivatedApp
 ### this is for feature X
+
+## Now this is for feature Y
+
 MotivatedApp is a simple React application that allows users to input their name and age. Upon clicking the "Start My Day" button, the app provides a daily motivational message based on the user's age range.
 
 ## How It Works
