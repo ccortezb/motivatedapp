@@ -5,6 +5,18 @@ const App = () => {
   const [name, setName] = useState('');
   const [age, setAge] = useState('');
   const [message, setMessage] = useState('');
+  const [error, setError] = useState('');
+
+  const startMyDay = () => {
+    if (!name || !age || isNaN(age)) {
+      setError('Please enter a valid name and age.');
+      setMessage('');
+    } else {
+      setError('');
+      const randomMessage = getRandomMessage(age);
+      setMessage(randomMessage);
+    }
+  };
 
   const getRandomMessage = (age) => {
     const messages = {
@@ -47,7 +59,8 @@ const App = () => {
         <hr /> {/* Divider */}
         <button onClick={startMyDay}>Start My Day</button>
       </div>
-      {message && <div className="message-container">{message}</div>}
+      {error && <div data-testid="error-message" className="error-message">{error}</div>}
+      {message && <div data-testid="motivational-message" className="motivational-message">{message}</div>}
     </div>
   );
 };
