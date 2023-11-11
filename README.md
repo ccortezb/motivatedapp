@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# MotivatedApp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+MotivatedApp is a simple React application that allows users to input their name and age. Upon clicking the "Start My Day" button, the app provides a daily motivational message based on the user's age range.
 
-## Available Scripts
+## How It Works
 
-In the project directory, you can run:
+1. **Name and Age Input:**
+   - Enter your name in the "Name" input field.
+   - Input your age in the "Age" input field.
 
-### `npm start`
+2. **Start My Day:**
+   - Click the "Start My Day" button to receive a personalized motivational message.
+   - The message varies based on your age range:
+     - Below 20: Inspirational messages for the youth.
+     - 21 to 35: Motivational messages for those in their prime.
+     - Above 35: Wisdom-filled messages for experienced individuals.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. **Motivational Message:**
+   - The app displays a motivational message based on your age range and wishes you a good morning, afternoon, or evening.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How to Deploy
 
-### `npm test`
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/ccortezb/motivatedapp.git
+   cd motivatedapp
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Install Dependencies**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```bash
+    npm install
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Run the App Locally**
 
-### `npm run eject`
+    ```bash
+    npm start
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to view the app locally.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **Deploy on GitHub Pages (Optional)**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   a. **Create a GitHub Repository**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   If you don't have a GitHub repository yet, create one on [GitHub](https://github.com/).
 
-## Learn More
+   b. **Push Changes to GitHub**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    ```bash
+    git add .
+    git commit -m "Initial commit"
+    git push origin main
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   c. **Enable GitHub Pages**
 
-### Code Splitting
+    - Go to your GitHub repository.
+    - Navigate to the "Settings" tab.
+    - Scroll down to the "GitHub Pages" section.
+    - Set the source branch (e.g., `main`), and your app will be accessible at `https://yourusername.github.io/repositoryname`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. **Share Your Deployed App**
 
-### Analyzing the Bundle Size
+    Share the link to your deployed app with others, and they can now access and interact with MotivatedApp!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributions
 
-### Making a Progressive Web App
+Contributions are welcome! If you find any issues or have suggestions, feel free to open an issue or create a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Made by Carlos Cortez, Torrens University. Test. for DOT301, 2023
