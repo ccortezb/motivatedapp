@@ -5,6 +5,7 @@ const App = () => {
   const [name, setName] = useState('');
   const [age, setAge] = useState('');
   const [message, setMessage] = useState('');
+  const [error, setError] = useState('');
 
   const getRandomMessage = (age) => {
     const messages = {
@@ -19,11 +20,15 @@ const App = () => {
   };
 
   const startMyDay = () => {
+    if (!name || !age || isNaN(age)) {
+      setError('Please enter a valid name and age.');
+      setMessage('');
+    } else {
     const greeting = ['Good morning', 'Good afternoon', 'Good evening'];
     const randomGreeting = greeting[Math.floor(Math.random() * greeting.length)];
     const randomMotivatedMessage = getRandomMessage(age);
-
     setMessage(`${randomGreeting}, ${name}! ${randomMotivatedMessage}`);
+    }
   };
 
   return (
@@ -47,7 +52,8 @@ const App = () => {
         <hr /> {/* Divider */}
         <button onClick={startMyDay}>Start My Day</button>
       </div>
-      {message && <div className="message-container">{message}</div>}
+      {error && <div data-testid="error-message" className="error-message">{error}</div>}
+      {message && <div data-testid="motivational-message" className="motivational-message">{message}</div>}
     </div>
   );
 };
