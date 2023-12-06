@@ -1,4 +1,7 @@
 # MotivatedApp
+
+## Status: working deployments from jenkins job 01
+
 ### this is for feature X
 
 ## Now this is for feature Y
