@@ -23,6 +23,6 @@ cp -r build/* deployable-package/
 
 # Zip the deployable package
 zip -r MotivatedAppDeployablePackage.zip deployable-package/
-
+ls -l
 # Clean up the temporary directory
 rm -rf deployable-package
