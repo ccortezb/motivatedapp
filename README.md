@@ -1,6 +1,6 @@
 # MotivatedApp
 
-## updated dec 10.
+## Updated dec 10.
 
 ## Status: working deployments from jenkins job 01
 ## Status: testing automated jenkins build using github webhooks, socketxp and jenkins localhost to make jenkins localhost available through a public proxy to configure github webhooks.
